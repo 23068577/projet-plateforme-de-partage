@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Recettes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur l'Application de Recettes</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="publier_recette.html">Publier une recette</a>
+            <a href="recherche_recette.html">Rechercher des recettes</a>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <h2>Trouver une recette</h2>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Entrez un mot-clé" required>
+            <button type="submit">Rechercher</button>
+        </form>
+    </div>
+
+    <section class="recettes">
+        <h2>Liste des Recettes</h2>
+        <div class="recette-item">
+            <h3>Recette de Spaghetti à la Carbonara</h3>
+            <p>C'est une recette traditionnelle italienne de pâtes à la carbonara avec une sauce crémeuse...</p>
+            <a href="#">Voir la recette</a>
+        </div>
+        <div class="recette-item">
+            <h3>Salade César</h3>
+            <p>Une salade classique avec du poulet grillé, de la laitue, des croûtons et une sauce crémeuse.</p>
+            <a href="#">Voir la recette</a>
+        </div>
+        <div class="recette-item">
+            <h3>Soupe de légumes</h3>
+            <p>Une soupe légère et savoureuse avec des légumes frais et un bouillon maison...</p>
+            <a href="#">Voir la recette</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Application de Recettes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publier une Recette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Publier une Recette</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="publier_recette.html">Publier une recette</a>
+            <a href="recherche_recette.html">Rechercher des recettes</a>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h2>Formulaire de Publication</h2>
+        <form id="publier-recette-form">
+            <label for="titre">Titre :</label>
+            <input type="text" id="titre" name="titre" placeholder="Nom de la recette" required>
+
+            <label for="categorie">Catégorie :</label>
+            <input type="text" id="categorie" name="categorie" placeholder="Catégorie (ex : entrée, plat principal)" required>
+
+            <label for="description">Description :</label>
+            <textarea id="description" name="description" placeholder="Description de la recette" required></textarea>
+
+            <label for="ingredients">Ingrédients :</label>
+            <textarea id="ingredients" name="ingredients" placeholder="Liste des ingrédients" required></textarea>
+
+            <label for="instructions">Instructions :</label>
+            <textarea id="instructions" name="instructions" placeholder="Étapes de préparation" required></textarea>
+
+            <button type="submit">Publier la recette</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Application de Recettes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
